@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25340125, y: 0.000000061306196, z: -0.00000001605922, w: 0.9673613}
-  m_LocalPosition: {x: 0, y: 31.69, z: -4}
+  m_LocalPosition: {x: 0, y: 31.69, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 348994470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 18.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -391,9 +391,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 44
   depth: 47
-  maxHeight: 17
-  noiseScale: 31.75
-  seed: 235
+  maxHeight: 13
+  noiseScale: 11.1
+  seed: 281
 --- !u!64 &348994476
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -567,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 535654201}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25340125, y: 0.000000059242623, z: -0.0000000081815195, w: 0.96736133}
-  m_LocalPosition: {x: 0, y: 3.358209, z: -5.970149}
+  m_LocalPosition: {x: 0, y: 2.25, z: -4}
   m_LocalScale: {x: 1.4925373, y: 1.4925373, z: 1.4925373}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -845,6 +845,7 @@ GameObject:
   - component: {fileID: 940929297}
   - component: {fileID: 940929296}
   - component: {fileID: 940929300}
+  - component: {fileID: 940929301}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -937,9 +938,9 @@ Transform:
   m_GameObject: {fileID: 940929295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 29.44, z: 0}
-  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 29.44, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2142730207}
   - {fileID: 535654202}
@@ -970,8 +971,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &940929301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940929295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3deff275f3c2c14bafb60188f03aaf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  isGrounded: 0
 --- !u!1 &2142730206
 GameObject:
   m_ObjectHideFlags: 0
